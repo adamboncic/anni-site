@@ -10,7 +10,7 @@
 
           <div class="film-trailer">
             <video controls muted autoplay loop playsinline>
-              <source :src="''" type="video/mp4">
+              <source :src="trailer" type="video/mp4">
               Your browser does not support HTML5 video.
             </video>
           </div>

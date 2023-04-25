@@ -1,4 +1,4 @@
-# revamped-annika-chavez
+# Site for Filmmaker Annika Chavez
 
 ## Project setup
 ```
