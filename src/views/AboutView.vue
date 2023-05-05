@@ -8,15 +8,18 @@
         </p>
       </div>
       <div class="about-image-wrapper col-sm-6 order-0 order-md-2 shift-in">
-        <img class="img-fluid" :src="aboutImageUrl" alt="About Image">
+        <img :data-src="aboutImageUrl" class="cld-responsive img-fluid" alt="About Image">
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import cloudinaryMixin from "@/cloudinaryMixin.js";
+
 export default {
   name: "AboutView",
+  mixins: [cloudinaryMixin],
   computed: {
     aboutImageUrl() {
       return this.$cloudinaryUrl('image', 'about.jpg', ['About']);
